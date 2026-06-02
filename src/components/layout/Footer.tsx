@@ -1,9 +1,10 @@
 'use client'
 
 import Link from 'next/link'
-import { Flower2, Mail, MapPin, MessageCircle } from 'lucide-react'
+import { Mail, MapPin, MessageCircle } from 'lucide-react'
 import { useConfig } from '@/hooks/useConfig'
 import { SITE_NAME, NAV_LINKS } from '@/lib/constants'
+import LotusIcon from '@/components/ui/LotusIcon'
 
 export default function Footer() {
   const { config } = useConfig()
@@ -14,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Flower2 className="w-6 h-6 text-primary" />
+              <LotusIcon className="w-6 h-6 text-primary" size={24} />
               <span className="text-lg font-bold">{SITE_NAME}</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
