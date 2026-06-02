@@ -48,7 +48,7 @@ export default function ArtesaniasPage() {
       >
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Artesanías</h1>
         <p className="text-muted text-lg max-w-2xl">
-          Productos hechos a mano por artesanos bolivianos. Lleva un pedazo de
+          Productos hechos a mano por artesanos ayacuchanos. Lleva un pedazo de
           nuestra cultura contigo.
         </p>
       </motion.div>

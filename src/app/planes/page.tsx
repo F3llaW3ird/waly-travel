@@ -50,7 +50,7 @@ export default function PlanesPage() {
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Planes Turísticos</h1>
         <p className="text-muted text-lg max-w-2xl">
           Descubre nuestros paquetes turísticos diseñados para que vivas experiencias
-          únicas en los destinos más increíbles de Bolivia.
+          únicas en los destinos más increíbles de Ayacucho.
         </p>
       </motion.div>
 

@@ -3,7 +3,7 @@ export function cn(...inputs: (string | undefined | null | false)[]) {
 }
 
 export function formatPrice(price: number): string {
-  return `Bs ${price.toLocaleString('es-BO')}`
+  return `S/ ${price.toLocaleString('es-PE')}`
 }
 
 export function truncate(text: string, length: number): string {

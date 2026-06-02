@@ -92,9 +92,9 @@ export default function NosotrosPage() {
           </div>
         ) : (
           <p className="text-muted">
-            Somos una agencia de viajes boliviana dedicada a ofrecer las mejores
+            Somos una agencia de viajes dedicada a ofrecer las mejores
             experiencias turísticas. Conectamos a nuestros clientes con los
-            destinos más increíbles de Bolivia, ofreciendo planes turísticos
+            destinos más increíbles de Ayacucho, ofreciendo planes turísticos
             personalizados, artesanías únicas y pasajes aéreos.
           </p>
         )}
@@ -116,7 +116,7 @@ export default function NosotrosPage() {
           ) : (
             <p className="text-muted leading-relaxed">
               {config?.mission ||
-                'Ofrecer experiencias de viaje inolvidables que conecten a las personas con la riqueza cultural, natural y artesanal de Bolivia.'}
+                'Ofrecer experiencias de viaje inolvidables que conecten a las personas con la riqueza cultural, natural y artesanal de Ayacucho.'}
             </p>
           )}
         </motion.div>
@@ -136,7 +136,7 @@ export default function NosotrosPage() {
           ) : (
             <p className="text-muted leading-relaxed">
               {config?.vision ||
-                'Ser la agencia de viajes líder en Bolivia, reconocida por nuestra calidad, innovación y compromiso con el turismo sostenible.'}
+                'Ser la agencia de viajes líder en Ayacucho, reconocida por nuestra calidad, innovación y compromiso con el turismo sostenible.'}
             </p>
           )}
         </motion.div>

@@ -67,7 +67,7 @@ export default function ArtesaniasPreview() {
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Artesanías</h2>
           <p className="text-muted text-lg max-w-xl mx-auto">
-            Productos únicos hechos a mano por artesanos bolivianos
+            Productos únicos hechos a mano por artesanos ayacuchanos
           </p>
         </motion.div>
 

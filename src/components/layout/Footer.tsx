@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Tu agencia de viajes de confianza. Descubre los mejores destinos,
-              planes turísticos y artesanías de Bolivia.
+              planes turísticos y artesanías de Ayacucho.
             </p>
           </div>
 

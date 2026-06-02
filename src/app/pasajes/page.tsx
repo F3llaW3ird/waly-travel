@@ -14,15 +14,15 @@ import WhatsAppButton from '@/components/ui/WhatsAppButton'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
 const destinations = [
-  'La Paz',
-  'Santa Cruz',
-  'Cochabamba',
-  'Sucre',
-  'Tarija',
-  'Potosi',
-  'Oruro',
-  'Trinidad',
-  'Cobija',
+  'Lima',
+  'Ayacucho',
+  'Cusco',
+  'Arequipa',
+  'Trujillo',
+  'Iquitos',
+  'Pucallpa',
+  'Tarapoto',
+  'Piura',
 ]
 
 export default function PasajesPage() {

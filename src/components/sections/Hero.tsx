@@ -22,7 +22,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
-            Descubre Bolivia con{' '}
+            Descubre Ayacucho con{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-yellow-300">
               Waly Travel
             </span>

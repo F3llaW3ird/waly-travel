@@ -44,7 +44,7 @@ export default function DestinosPage() {
       >
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Destinos Turísticos</h1>
         <p className="text-muted text-lg max-w-2xl">
-          Explora los lugares más fascinantes de Bolivia. Cada destino tiene una
+          Explora los lugares más fascinantes de Ayacucho. Cada destino tiene una
           historia que contar y una experiencia que ofrecer.
         </p>
       </motion.div>

@@ -1,6 +1,6 @@
 export const SITE_NAME = 'Waly Travel'
 export const SITE_DESCRIPTION =
-  'Tu agencia de viajes de confianza. Planes turísticos, artesanías y pasajes aéreos en Bolivia.'
+  'Tu agencia de viajes de confianza. Planes turísticos, artesanías y pasajes aéreos en Ayacucho.'
 
 export const WHATSAPP_DEFAULT_MESSAGE = 'Hola! Quiero información sobre...'
 
