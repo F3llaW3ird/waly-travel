@@ -9,9 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.4.0",
+    "@sanity/image-url": "^2.1.1",
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^1.17.0",
     "next": "16.2.7",
+    "next-sanity": "^13.0.8",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.77.0",
+    "sanity": "^5.28.0",
+    "zod": "^4.4.3",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
