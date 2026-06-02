@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Mail, MapPin, MessageCircle } from 'lucide-react'
 import { useConfig } from '@/hooks/useConfig'
 import { SITE_NAME, NAV_LINKS } from '@/lib/constants'
-import Image from 'next/image'
+import LotusIcon from '@/components/ui/LotusIcon'
 
 export default function Footer() {
   const { config } = useConfig()
@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Image src="/images/lotus-logo.PNG" alt="Waly Travel" width={28} height={28} className="object-contain" />
+              <LotusIcon className="w-6 h-6 text-primary" size={24} />
               <span className="text-lg font-bold">{SITE_NAME}</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
