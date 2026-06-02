@@ -8,7 +8,7 @@ import {
   Calendar,
   ArrowRightLeft,
   Users,
-  ArrowRight,
+  AlertCircle,
 } from 'lucide-react'
 import WhatsAppButton from '@/components/ui/WhatsAppButton'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
@@ -31,19 +31,35 @@ export default function PasajesPage() {
   const [fecha, setFecha] = useState('')
   const [pasajeros, setPasajeros] = useState(1)
   const [searched, setSearched] = useState(false)
+  const [error, setError] = useState('')
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
-    if (!origen || !destino) return
+    setError('')
+    if (!origen || !destino) {
+      setError('Selecciona origen y destino')
+      return
+    }
+    if (origen === destino) {
+      setError('Origen y destino no pueden ser iguales')
+      return
+    }
     setSearched(true)
   }
 
   const handleSwap = () => {
+    setError('')
     setOrigen(destino)
     setDestino(origen)
   }
 
-  const whatsappMessage = `Hola! Quiero información sobre pasajes aéreos:\n- Origen: ${origen || 'No especificado'}\n- Destino: ${destino || 'No especificado'}\n- Fecha: ${fecha || 'No especificada'}\n- Pasajeros: ${pasajeros}`
+  const handleFieldChange = (field: 'origen' | 'destino', value: string) => {
+    setError('')
+    if (field === 'origen') setOrigen(value)
+    else setDestino(value)
+  }
+
+  const whatsappMessage = `Hola! Quiero información sobre pasajes aéreos:%0A- Origen: ${origen || 'No especificado'}%0A- Destino: ${destino || 'No especificado'}%0A- Fecha: ${fecha || 'No especificada'}%0A- Pasajeros: ${pasajeros}`
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -78,7 +94,7 @@ export default function PasajesPage() {
                 />
                 <select
                   value={origen}
-                  onChange={(e) => setOrigen(e.target.value)}
+                  onChange={(e) => handleFieldChange('origen', e.target.value)}
                   className="w-full pl-10 pr-4 py-2.5 bg-background text-foreground border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary appearance-none"
                 >
                   <option value="">Seleccionar</option>
@@ -100,7 +116,7 @@ export default function PasajesPage() {
                 />
                 <select
                   value={destino}
-                  onChange={(e) => setDestino(e.target.value)}
+                  onChange={(e) => handleFieldChange('destino', e.target.value)}
                   className="w-full pl-10 pr-4 py-2.5 bg-background text-foreground border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary appearance-none"
                 >
                   <option value="">Seleccionar</option>
@@ -145,9 +161,28 @@ export default function PasajesPage() {
                   size={16}
                   className="absolute left-3 top-1/2 -translate-y-1/2 text-muted"
                 />
+                <input
+                  type="number"
+                  min={1}
+                  max={10}
+                  value={pasajeros}
+                  onChange={(e) => setPasajeros(Number(e.target.value))}
+                  className="w-full pl-10 pr-4 py-2.5 bg-background text-foreground border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
+                />
               </div>
             </div>
           </div>
+
+          {error && (
+            <motion.p
+              initial={{ opacity: 0, y: -5 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="flex items-center gap-1.5 text-red-500 text-sm mt-3"
+            >
+              <AlertCircle size={14} />
+              {error}
+            </motion.p>
+          )}
 
           <button
             type="submit"
