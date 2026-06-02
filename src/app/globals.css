@@ -59,3 +59,22 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+select option {
+  color: #171717;
+  background: #ffffff;
+}
+
+.dark select {
+  background-color: #1E293B;
+  color: #F1F5F9;
+}
+
+.dark select option {
+  color: #F1F5F9;
+  background: #1E293B;
+}
+
+.dark input[type="date"] {
+  color-scheme: dark;
+}
