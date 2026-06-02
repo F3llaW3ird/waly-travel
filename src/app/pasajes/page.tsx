@@ -74,7 +74,7 @@ export default function PasajesPage() {
               <div className="relative">
                 <Plane
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
                 />
                 <select
                   value={origen}
@@ -96,7 +96,7 @@ export default function PasajesPage() {
               <div className="relative">
                 <Plane
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted rotate-90"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 rotate-90"
                 />
                 <select
                   value={destino}
@@ -127,7 +127,7 @@ export default function PasajesPage() {
               <div className="relative">
                 <Calendar
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
                 />
                 <input
                   type="date"
@@ -143,15 +143,7 @@ export default function PasajesPage() {
               <div className="relative">
                 <Users
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted"
-                />
-                <input
-                  type="number"
-                  min={1}
-                  max={10}
-                  value={pasajeros}
-                  onChange={(e) => setPasajeros(Number(e.target.value))}
-                  className="w-full pl-10 pr-4 py-2.5 bg-background text-foreground border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
                 />
               </div>
             </div>
