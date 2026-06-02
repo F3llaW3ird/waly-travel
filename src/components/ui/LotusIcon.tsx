@@ -9,20 +9,19 @@ export default function LotusIcon({ className, size = 24 }: LotusIconProps) {
       xmlns="http://www.w3.org/2000/svg"
       width={size}
       height={size}
-      viewBox="0 0 512 512"
+      viewBox="0 0 100 100"
       fill="none"
       stroke="currentColor"
-      strokeWidth="16"
+      strokeWidth="3"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
     >
-      <path d="M256 96c0 0-70 60-70 110s31 66 70 66 70-16 70-66-70-110-70-110z" />
-      <path d="M256 170c0 0-44 30-44 60s20 36 44 36 44-6 44-36-44-60-44-60z" />
-      <path d="M140 250c0 0-60 50-60 90s40 60 60 60 60-20 60-60-60-90-60-90z" />
-      <path d="M372 250c0 0 60 50 60 90s-40 60-60 60-60-20-60-60 60-90 60-90z" />
-      <path d="M256 270c0 0-40 40-40 70s18 50 40 50 40-20 40-50-40-70-40-70z" />
-      <ellipse cx="256" cy="390" rx="140" ry="20" />
+      <path d="M50 90 C20 80 10 60 15 45 C20 30 35 25 50 35 C65 25 80 30 85 45 C90 60 80 80 50 90Z" />
+      <path d="M50 85 C30 75 22 58 26 45 C30 32 42 28 50 38 C58 28 70 32 74 45 C78 58 70 75 50 85Z" />
+      <path d="M50 80 C38 72 32 58 35 48 C38 38 46 34 50 42 C54 34 62 38 65 48 C68 58 62 72 50 80Z" />
+      <path d="M50 75 C42 70 38 60 40 52 C42 44 48 40 50 46 C52 40 58 44 60 52 C62 60 58 70 50 75Z" />
+      <path d="M50 70 C46 66 44 60 45 55 C46 50 48 48 50 50 C52 48 54 50 55 55 C56 60 54 66 50 70Z" />
     </svg>
   )
 }
