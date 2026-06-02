@@ -7,7 +7,7 @@ import DarkModeToggle from '@/components/ui/DarkModeToggle'
 import { useCart } from '@/hooks/useCart'
 import { SITE_NAME, NAV_LINKS } from '@/lib/constants'
 import { motion, AnimatePresence } from 'framer-motion'
-import LotusIcon from '@/components/ui/LotusIcon'
+import Image from 'next/image'
 
 const iconMap: Record<string, React.ReactNode> = {
   'Planes': <Package size={18} />,
@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <LotusIcon className="w-7 h-7 text-primary" size={28} />
+            <Image src="/images/lotus-logo.PNG" alt="Waly Travel" width={32} height={32} className="object-contain" />
             <span className="text-xl font-bold text-gradient">{SITE_NAME}</span>
           </Link>
 
