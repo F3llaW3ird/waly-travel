@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, ShoppingBag, Plane, MapPin, Package, PenLine, Phone } from 'lucide-react'
+import { Menu, X, ShoppingBag, Plane, MapPin, Package, PenLine, Phone, Flower2 } from 'lucide-react'
 import DarkModeToggle from '@/components/ui/DarkModeToggle'
 import { useCart } from '@/hooks/useCart'
 import { SITE_NAME, NAV_LINKS } from '@/lib/constants'
@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <Plane className="w-7 h-7 text-primary" />
+            <Flower2 className="w-7 h-7 text-primary" />
             <span className="text-xl font-bold text-gradient">{SITE_NAME}</span>
           </Link>
 
