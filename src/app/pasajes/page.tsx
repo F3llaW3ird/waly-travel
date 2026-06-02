@@ -74,16 +74,16 @@ export default function PasajesPage() {
               <div className="relative">
                 <Plane
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted"
                 />
                 <select
                   value={origen}
                   onChange={(e) => setOrigen(e.target.value)}
                   className="w-full pl-10 pr-4 py-2.5 bg-background text-foreground border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary appearance-none"
                 >
-                  <option value="" className="text-gray-900 dark:text-gray-100">Seleccionar</option>
+                  <option value="">Seleccionar</option>
                   {destinations.map((d) => (
-                    <option key={d} value={d} className="text-gray-900 dark:text-gray-100">
+                    <option key={d} value={d}>
                       {d}
                     </option>
                   ))}
@@ -96,18 +96,18 @@ export default function PasajesPage() {
               <div className="relative">
                 <Plane
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 rotate-90"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted rotate-90"
                 />
                 <select
                   value={destino}
                   onChange={(e) => setDestino(e.target.value)}
                   className="w-full pl-10 pr-4 py-2.5 bg-background text-foreground border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary appearance-none"
                 >
-                  <option value="" className="text-gray-900 dark:text-gray-100">Seleccionar</option>
+                  <option value="">Seleccionar</option>
                   {destinations
                     .filter((d) => d !== origen)
                     .map((d) => (
-                      <option key={d} value={d} className="text-gray-900 dark:text-gray-100">
+                      <option key={d} value={d}>
                         {d}
                       </option>
                     ))}
@@ -127,7 +127,7 @@ export default function PasajesPage() {
               <div className="relative">
                 <Calendar
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted"
                 />
                 <input
                   type="date"
@@ -143,7 +143,7 @@ export default function PasajesPage() {
               <div className="relative">
                 <Users
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted"
                 />
               </div>
             </div>

@@ -2,6 +2,35 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+:root {
+  --c-bg: #ffffff;
+  --c-fg: #171717;
+  --c-muted: #6B7280;
+  --c-border: #E5E7EB;
+  --c-card: #F9FAFB;
+  --c-card-hover: #F3F4F6;
+}
+
+.dark {
+  --c-bg: #0F172A;
+  --c-fg: #F1F5F9;
+  --c-muted: #94A3B8;
+  --c-border: #1E293B;
+  --c-card: #1E293B;
+  --c-card-hover: #334155;
+}
+.dark select {
+  background-color: #1E293B;
+  color: #F1F5F9;
+}
+.dark select option {
+  color: #F1F5F9;
+  background: #1E293B;
+}
+.dark input[type="date"] {
+  color-scheme: dark;
+}
+
 @theme inline {
   --color-primary: #0A8F9E;
   --color-primary-dark: #07707D;
@@ -10,46 +39,35 @@
   --color-secondary-dark: #D4890A;
   --color-accent: #1A2A3A;
   --color-accent-light: #2A3F52;
-  --color-background: #ffffff;
-  --color-foreground: #171717;
-  --color-muted: #6B7280;
-  --color-border: #E5E7EB;
-  --color-card: #F9FAFB;
-  --color-card-hover: #F3F4F6;
+  --color-background: var(--c-bg);
+  --color-foreground: var(--c-fg);
+  --color-muted: var(--c-muted);
+  --color-border: var(--c-border);
+  --color-card: var(--c-card);
+  --color-card-hover: var(--c-card-hover);
   --font-sans: 'Inter', var(--font-geist-sans), system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
 }
 
-.dark {
-  --color-background: #0F172A;
-  --color-foreground: #F1F5F9;
-  --color-muted: #94A3B8;
-  --color-border: #1E293B;
-  --color-card: #1E293B;
-  --color-card-hover: #334155;
-}
-
 body {
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background: var(--c-bg);
+  color: var(--c-fg);
   font-family: var(--font-sans);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(135deg, #0A8F9E, #F5A623);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-
   .bg-glass {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
-
   .dark .bg-glass {
     background: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -58,23 +76,4 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-select option {
-  color: #171717;
-  background: #ffffff;
-}
-
-.dark select {
-  background-color: #1E293B;
-  color: #F1F5F9;
-}
-
-.dark select option {
-  color: #F1F5F9;
-  background: #1E293B;
-}
-
-.dark input[type="date"] {
-  color-scheme: dark;
 }
