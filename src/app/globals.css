@@ -19,13 +19,9 @@
   --c-card: #1E293B;
   --c-card-hover: #334155;
 }
-.dark select {
-  background-color: #1E293B;
-  color: #F1F5F9;
-}
 .dark select option {
-  color: #F1F5F9;
   background: #1E293B;
+  color: #F1F5F9;
 }
 .dark input[type="date"] {
   color-scheme: dark;
